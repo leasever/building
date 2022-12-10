@@ -51,7 +51,7 @@ export default function Home() {
         <div className="body_home_bout">
           <h2>EXPERTOS EN PROYECTOS DE CONSTRUCCIÓN</h2>
           <p>Empresa constructora en Junín</p>
-          <p>Somos una empresa constructora en Piura, especializada en la supervisión y ejecución de obras y proyectos de construcción, y la elaboración de expedientes técnicos. Empleamos mano de obra altamente calificada y disponemos de las herramientas y del material adecuado para ofrecer un resultado de calidad.</p>
+          <p>Somos una empresa constructora en Huancayo, especializada en la supervisión y ejecución de obras y proyectos de construcción, y la elaboración de expedientes técnicos. Empleamos mano de obra altamente calificada y disponemos de las herramientas y del material adecuado para ofrecer un resultado de calidad.</p>
           <div className="btn_pdf">
             <a href="/img/servicios.pdf" download="servicios">
               <span className="custom_btn">DESCARGAR PDF DE SERVICIOS</span>
