@@ -101,7 +101,6 @@ header {
       }
     }
 
-
     .burger_menu {
       display: flex;
       flex-direction: column;
@@ -138,7 +137,6 @@ header {
           transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
         }
       }
-
     }
   }
 
@@ -185,10 +183,7 @@ header {
         }
       }
     }
-
   }
-
-
 }
 
 .custom_btn {
@@ -205,10 +200,9 @@ header {
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: rgba($color-secondary, 0.9)
+    background-color: rgba($color-secondary, 0.9);
   }
 }
-
 
 // home
 .banner_section {
@@ -218,17 +212,15 @@ header {
   overflow: hidden;
   color: $color-opaque;
 
-
   .parallax {
     position: absolute;
-    background-image: url("/img/banner1.webp");
+    background-image: url('/img/banner1.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     min-height: 100vh;
     width: 100%;
-
   }
 
   .overlay {
@@ -258,7 +250,6 @@ header {
       h1 {
         font-size: 50px;
       }
-
     }
 
     a {
@@ -273,7 +264,6 @@ header {
   margin: 20px 0;
   width: 100%;
 
-
   a {
     text-decoration: none;
     width: 50%;
@@ -285,16 +275,12 @@ header {
     background-color: $color-border;
 
     .client_banner {
-
       .client_banner_img {
-
-
         img {
           object-fit: cover;
           width: 100%;
           max-width: 768px;
           height: 352px;
-
         }
       }
 
@@ -307,7 +293,6 @@ header {
           font-size: 20px;
           // font-weight: bold;
         }
-
       }
     }
   }
@@ -322,7 +307,6 @@ header {
   width: 100%;
 
   p:nth-child(2n) {
-
     font-size: 20px;
   }
 
@@ -364,7 +348,6 @@ header {
 
     .description {
       p:first-child {
-
         font-size: 20px;
       }
     }
@@ -381,7 +364,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
 
     a {
       width: 23%;
@@ -422,7 +404,6 @@ header {
 
 //end home
 
-
 .banner_section_page {
   position: relative;
   width: 100%;
@@ -430,17 +411,15 @@ header {
   overflow: hidden;
   color: $color-opaque;
 
-
   .parallax_page {
     position: absolute;
-    background-image: url("/img/banner_about_1.jpg");
+    background-image: url('/img/banner_about_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     min-height: 85vh;
     width: 100%;
-
   }
 
   .overlay_page {
@@ -470,7 +449,6 @@ header {
       h1 {
         font-size: 50px;
       }
-
     }
 
     a {
@@ -497,8 +475,7 @@ header {
   }
 
   .about_banner_2 {
-
-    background-image: url("/img/banner_about_2.jpg");
+    background-image: url('/img/banner_about_2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -530,14 +507,12 @@ header {
           text-decoration: none;
           color: $color-text;
         }
-
       }
     }
-
   }
 
   .sec_2 {
-    background-image: url("/img/banner_about_3.jpg");
+    background-image: url('/img/banner_about_3.jpg');
 
     .container {
       .banner_2_contain {
@@ -550,8 +525,133 @@ header {
     }
   }
 }
+
 // end about
 
+//project
+.project_section {
+  .banner_section_page {
+    .parallax_page {
+      background-image: url('/img/banner_project_1.jpg');
+    }
+
+    .container {
+      .description_banner_page {
+        justify-content: center;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .template_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 160px;
+    background-color: $color-border;
+  }
+
+  .all_projects {
+    padding: 50px 0;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .card_project {
+        width: 30%;
+        margin: 10px;
+        border: 1px solid $color-border;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+
+        img {
+          object-fit: cover;
+          object-position: center;
+          border-radius: 5px;
+          width: 100%;
+          height: 310px;
+        }
+
+        p:first-child {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+//end project
+
+//modal
+.overlay_modal {
+  background-color: rgba($color-text, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  padding: 20px;
+
+
+  .modal_container {
+    max-width: 1000px;
+    width: 95%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    min-height: 450px;
+    background-color: $color-opaque;
+    border: 20px;
+    padding: 20px;
+
+
+    img {
+      object-fit: contain;
+      object-position: center;
+      border-radius: 5px;
+      width: 70%;
+      max-width: 768px;
+      max-height: 400px;
+    }
+
+    .modal_right {
+      width: 100%;
+      height: auto;
+
+      .close_btn_modal {
+        position: fixed;
+        top: 0px;
+        right: 20px;
+        cursor: pointer;
+      }
+
+      .content_modal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+
+        p:first-child {
+          font-size: 24px;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}
+
+//fin modal
 footer {
   display: flex;
   flex-direction: column;
@@ -596,9 +696,42 @@ footer {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .project_section {
+    .all_projects {
+      .container {
+        .card_project {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  .overlay_modal {
+    .modal_container {
+      flex-direction: column;
+      padding: 0px;
+
+      img {
+        width: 100%;
+        margin: auto;
+      }
+
+      .modal_right {
+        padding-left: 10px;
+
+        .content_modal {
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   header {
-
     .menu_section_pc {
       display: none;
     }
@@ -625,11 +758,9 @@ footer {
 
       .title_description,
       .title_description_page {
-
         h1 {
           font-size: 42px;
         }
-
       }
     }
   }
@@ -711,5 +842,26 @@ footer {
 
   .section_footer {
     flex-direction: column;
+  }
+
+  .project_section {
+    .all_projects {
+      .container {
+        .card_project {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .overlay {
+    .modal_container {
+      // flex-direction: column;
+      // top: 0;
+      // // left: 0;
+      // transform: none;
+      // height: 100vh;
+      // width: 100%;
+    }
   }
 }

@@ -7,6 +7,7 @@ import Home from './routes/Home'
 import About from './routes/About'
 import Contact from './routes/Contact'
 import Error from './routes/Error'
+import Project from './routes/Project'
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <About />
+  },
+  {
+    path: '/project',
+    element: <Project />
   }
 ])
 

@@ -28,10 +28,13 @@ export default function Menu() {
             <nav>
               <ul>
                 <li>
-                  <NavLink to={'/'}>Home</NavLink>
+                  <NavLink to={'/'}>HOME</NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/about'}>Empresa</NavLink>
+                  <NavLink to={'/about'}>EMPRESA</NavLink>
+                </li>
+                <li>
+                  <NavLink to={'/project'}>NUESTRAS OBRAS </NavLink>
                 </li>
               </ul>
             </nav>
@@ -51,10 +54,13 @@ export default function Menu() {
           <nav>
             <ul>
               <li>
-                <NavLink to={'/'}>Home</NavLink>
+                <NavLink to={'/'}>HOME</NavLink>
               </li>
               <li>
-                <NavLink to={'/about'}>Empresa</NavLink>
+                <NavLink to={'/about'}>EMPRESA</NavLink>
+              </li>
+              <li>
+                <NavLink to={'/project'}>NUESTRAS OBRAS</NavLink>
               </li>
             </ul>
           </nav>

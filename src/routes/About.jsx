@@ -44,7 +44,7 @@ export default function About() {
             <div className="banner_2_contain">
               <h2>SOLUCIONES INTEGRALES EN PROYECTOS INMOBILIARIOS EN HUANCAYO</h2>
               <p>Misión: coordinar, supervisar y ejecutar proyectos de construcción que satisfagan por completo las necesidades de los clientes, con mano de obra experta y cualificada, y las herramientas óptimas para ofrecer un resultado de calidad, con respeto y cuidado del medio ambiente.</p>
-              <p>Visión: ser la empresa constructora líder en la región norte del Perú contribuyendo de manera activa al crecimiento de la región, y ofreciendo como resultado obras reconocidas por su calidad y belleza.</p>
+              <p>Visión: ser la empresa constructora líder en la región centro del Perú contribuyendo de manera activa al crecimiento de la región, y ofreciendo como resultado obras reconocidas por su calidad y belleza.</p>
               <a href="/img/servicios.pdf" download="servicios">
                 <span className="custom_btn">DESCARGAR BROCHURE</span>
               </a>
@@ -54,7 +54,7 @@ export default function About() {
         <div className="about_banner_2 sec_2">
           <div className="container">
             <div className="banner_2_contain">
-              <h2>NUSTROS VALORES</h2>
+              <h2>NUESTROS VALORES</h2>
               <ul>
                 <li>Respeto por las personas y los derechos sociales.</li>
                 <li>Responsabilidad y formalidad con los compromisos adquiridos.</li>
