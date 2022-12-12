@@ -1,3 +1,4 @@
+import Carousel from './Carousel'
 export default function Modal({ open, onClose }) {
   if (!open) return null
   return (
@@ -8,11 +9,12 @@ export default function Modal({ open, onClose }) {
         }}
         className="modal_container"
       >
-        <img src="img/project_modal_1.jpg" loading="lazy" alt="project urban" />
+        <div className="carousel_img">
+          <Carousel />
+        </div>
+
         <div className="modal_right">
-          <p onClick={onClose} className="close_btn_modal">
-            X
-          </p>
+          <div className="close icon close_btn_modal" onClick={onClose}></div>
           <div className="content_modal">
             <p>REMODELACIÓN DE PRIMER PISO DE EDIFICIO DE GOBIERNO</p>
             <ul>

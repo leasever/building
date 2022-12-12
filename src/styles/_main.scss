@@ -6,8 +6,7 @@ $color-border: rgba(#ccc, 0.5);
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  // line-height: 24px;
+  font-size: 16px; 
 
   color-scheme: light dark;
   color: $color-text;
@@ -190,7 +189,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-width: 300px;
   height: 50px;
   margin: 10px;
   padding: 0 20px;
@@ -595,50 +593,68 @@ header {
   z-index: 9999;
   padding: 20px;
 
-
   .modal_container {
     max-width: 1000px;
     width: 95%;
+    max-height: 460px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: row;
-    min-height: 450px;
+
     background-color: $color-opaque;
-    border: 20px;
-    padding: 20px;
+    padding: 10px;
 
+    .carousel_img {
+      width: 75%;
+      height: 100%;
+      text-align: center;
 
-    img {
-      object-fit: contain;
-      object-position: center;
-      border-radius: 5px;
-      width: 70%;
-      max-width: 768px;
-      max-height: 400px;
+      img {
+        object-fit: cover;
+        object-position: center;
+        border-radius: 5px;
+        width: 100%;
+        max-height: 420px;
+        min-height: 204px;
+        opacity: 0;
+        transition: 1s;
+
+        &.loaded {
+          opacity: 1;
+        }
+      }
     }
 
     .modal_right {
-      width: 100%;
-      height: auto;
+      width: 25%;
 
       .close_btn_modal {
+        width: 40px;
+        height: 40px;
         position: fixed;
-        top: 0px;
-        right: 20px;
-        cursor: pointer;
+        top: 10px;
+        right: 10px;
+        border-radius: 50px;
+        transition: 1s;
+
+        &:hover {
+          background-color: $color-opaque;
+          border: solid 1px;
+        }
       }
 
       .content_modal {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding: 20px;
+        min-height: 200px;
+        padding: 0 20px;
+        margin-bottom: 10px;
 
         p:first-child {
-          font-size: 24px;
+          font-size: 18px;
         }
 
         ul {
@@ -652,6 +668,146 @@ header {
 }
 
 //fin modal
+//carousel
+.carousel_section {
+  position: relative;
+
+  .btn_carousel {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+
+    .btn_section {
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 100%;
+      width: 100px;
+      transition: 0.5s ease;
+      background-color: rgba($color-opaque, 0.2);
+
+      &:hover {
+        background-color: rgba($color-opaque, 0.3);
+      }
+    }
+  }
+
+  .dots_carousel {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+
+    .dot_carrousel_indicator {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: $color-text;
+      cursor: pointer;
+      margin: 0 5px;
+      border: solid 1px;
+      margin-bottom: 5px;
+
+      &.active_dot {
+        background: $color-secondary;
+      }
+    }
+  }
+}
+
+//icons
+.close.icon {
+  color: #000;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  &.icon:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: currentColor;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  &.icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 3px;
+    border-radius: 15px;
+    background-color: currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.arrow-left.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 25px;
+  height: 3px;
+  background-color: currentColor;
+
+  &.icon:before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: -7px;
+    width: 14px;
+    height: 14px;
+    border-top: solid 3px currentColor;
+    border-right: solid 3px currentColor;
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+}
+
+.arrow-right.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 2px;
+  margin-top: 10px;
+  width: 25px;
+  height: 3px;
+  background-color: currentColor;
+
+  &.icon:before {
+    content: '';
+    position: absolute;
+    right: 2px;
+    top: -7px;
+    width: 14px;
+    height: 14px;
+    border-top: solid 3px currentColor;
+    border-right: solid 3px currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -711,14 +867,17 @@ footer {
     .modal_container {
       flex-direction: column;
       padding: 0px;
+      overflow-y: scroll;
+      touch-action: pan-y;
 
-      img {
+      .carousel_img {
         width: 100%;
-        margin: auto;
+        padding: 10px;
       }
 
       .modal_right {
         padding-left: 10px;
+        width: 100%;
 
         .content_modal {
           p {
@@ -751,7 +910,6 @@ footer {
 
   .banner_section,
   .banner_section_page {
-
     .description_banner,
     .description_banner_page {
       padding-top: 50px;
@@ -854,14 +1012,5 @@ footer {
     }
   }
 
-  .overlay {
-    .modal_container {
-      // flex-direction: column;
-      // top: 0;
-      // // left: 0;
-      // transform: none;
-      // height: 100vh;
-      // width: 100%;
-    }
-  }
+  
 }
