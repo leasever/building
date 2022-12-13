@@ -1,26 +1,18 @@
 import { useState } from 'react'
+import Banner from '../components/Banner'
+import banner from '../data/project/banner.json'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import Modal from '../components/Modal'
+
 export default function Project() {
   const [openModal, setOpenModal] = useState(false)
   return (
-    <div>
+    <>
       <Menu />
-      <Modal open={openModal} onClose={()=> setOpenModal(false)} />
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
       <div className="project_section">
-        <div className="banner_section_page">
-          <div className="parallax_page"></div>
-          <div className="overlay_page"></div>
-          <div className="container">
-            <div className="description_banner_page">
-              <div className="title_description_page">
-                <h1>Proyectos inmobiliarios en Huancayo</h1>
-                <p>Algunos de nuestros proyectos finalizados.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Banner {...banner} />
         <div className="template_project">
           <div className="container">
             <p>Constructora Hermanos cuenta con una reconocida experiencia en Huancayo y toda la región centro del Perú, que queda avalada por cualquiera de nuestros proyectos finalizados.</p>
@@ -96,6 +88,6 @@ export default function Project() {
       </div>
 
       <Footer />
-    </div>
+    </>
   )
 }

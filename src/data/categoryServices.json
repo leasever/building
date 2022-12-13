@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Ejecución de obras Ing. Civil",
+    "description": "Diseño, elaboración y ejecución de proyectos de construcción civil.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Alquiler de maquinaria pesada ",
+    "description": "Alquiler de maquinaria pesada y equipos para sectores como la construcción, la industria o servicios.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Consultoría",
+    "description": "Equipo cualificado y con experiencia probada para poner sus conocimientos al servicio de su proyecto.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Construcciones metálicas",
+    "description": "Conocimiento y experiencia en trabajos de construcción con estructuras metálicas.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Elaboración de proyectos",
+    "description": "Cualificados para ofrecerle el mejor servicio de planeamiento y diseño de proyectos de construcción.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Demoliciones",
+    "description": "Demoliciones de calidad y orientadas a la máxima eficiencia para cualquier tipo de edificación.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Ejecución de proyectos arquitectónicos",
+    "description": "Coordinación y ejecución de proyectos de construcción arquitectónicos.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Fotorealismo 3D",
+    "description": "Creación de infografías e imágenes 3D que plasmarán con precisión el proyecto que tiene en mente.",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Alquiler de equipos livianos para construcción",
+    "description": "",
+    "image": "/img/category1.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Diseño y construcción de viviendas unifamiliares y multifamiliares",
+    "description": "",
+    "image": "/img/category1.jpg"
+  }
+]

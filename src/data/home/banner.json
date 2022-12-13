@@ -1,0 +1,13 @@
+{
+  "image": "banner_home_1.webp",
+  "height": "100vh",
+  "title": "Apostamos por el desarrollo de tu hogar",
+  "description": "Somos una empresa constructora en Junín, fuertemente implicada en el crecimiento y el desarrollo social del Perú, mediante la supervisión y ejecución de proyectos de construcción reconocidos por su calidad y respeto por el medio ambiente.",
+  "btnBanner": {
+    "isActive": true,
+    "href": "#biulding",
+    "isDonwload": false,
+    "fileName": "",
+    "title": "¿QUE NECESITA CONSTRUIR?"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "image": "banner_project_1.jpg",
+  "height": "75vh",
+  "title": "Proyectos inmobiliarios en Huancayo",
+  "description": "Algunos de nuestros proyectos finalizados.",
+  "btnBanner": {
+    "isActive": false
+  }
+}

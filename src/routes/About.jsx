@@ -1,27 +1,14 @@
+import Banner from '../components/Banner'
+import banner from '../data/about/banner.json'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+
 export default function About() {
   return (
-    <div>
+    <>
       <Menu />
-      <div className="about_section">
-        <div className="banner_section_page">
-          <div className="parallax_page"></div>
-          <div className="overlay_page"></div>
-          <div className="container">
-            <div className="description_banner_page">
-              <div className="title_description_page">
-                <h1>Proyectos inmobiliarios en Huancayo</h1>
-                <p>Constructora HERMANOS: empresa líder en proyectos inmobiliarios en Huancayo, en profesionalismo y formalidad.</p>
-              </div>
-              <div className="btn_pdf">
-                <a href="/img/servicios.pdf" download="servicios">
-                  <span className="custom_btn">DESCARGAR BROCHURE</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="about_container">
+        <Banner {...banner} />
         <div className="container">
           <div className="about_us">
             <div className="about_description">
@@ -70,6 +57,6 @@ export default function About() {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   )
 }

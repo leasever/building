@@ -45,7 +45,11 @@ export default function Carousel() {
             <div className="arrow-right icon"></div>
           </div>
         </div>
-        <div className="dots_carousel">{images.map((_, imageIndex) => (console.log(imageIndex), (<div key={imageIndex} className={`dot_carrousel_indicator ${selectedIndex === imageIndex ? ' active_dot' : ' '}`} onClick={() => goToImage(imageIndex)}></div>)))}</div>
+        <div className="dots_carousel">
+          {images.map((_, imageIndex) => (
+            <div key={imageIndex} className={`dot_carrousel_indicator ${selectedIndex === imageIndex ? ' active_dot' : ' '}`} onClick={() => goToImage(imageIndex)}></div>
+          ))}
+        </div>
       </div>
     </>
   )
