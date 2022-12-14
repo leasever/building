@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
-
-export default function Carousel() {
-  const images = ['SANA_1.jpg', 'SANA_2.jpg', 'SANA_3.jpg', 'SANA_4.jpg', 'SANA_5.jpg', 'SANA_6.jpg']
+export default function Carousel({ imageList }) {
+  const images = imageList
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [selectedImage, setSelectedImage] = useState(images[0])
   const [loaded, setLoaded] = useState(false)
@@ -29,25 +28,23 @@ export default function Carousel() {
     selectNewImage(selectedIndex, images, true)
   }
 
-  const goToImage = (imageIndex) => {
-    setSelectedImage(images[imageIndex])
-    setSelectedIndex(imageIndex)
+  const goToImage = (index) => {
+    setSelectedImage(images[index])
+    setSelectedIndex(index)
   }
   return (
     <>
       <div className="carousel_section">
-        <img src={`/img/SANA/${selectedImage}`} alt="Proyecto" loading="lazy" className={loaded ? 'loaded' : ' '} onLoad={() => setLoaded(true)} />
-        <div className="btn_carousel">
-          <div onClick={previus} className="btn_section">
-            <div className="arrow-left icon"></div>
-          </div>
-          <div onClick={next} className="btn_section">
-            <div className="arrow-right icon"></div>
-          </div>
+        <img src={selectedImage} alt="Proyecto" loading="lazy" className={loaded ? 'loaded' : ' '} onLoad={() => setLoaded(true)} />
+        <div onClick={previus} className="btn_carousel btn_previus">
+          <div className="arrow-left icon"></div>
+        </div>
+        <div onClick={next} className="btn_carousel btn_next">
+          <div className="arrow-right icon"></div>
         </div>
         <div className="dots_carousel">
-          {images.map((_, imageIndex) => (
-            <div key={imageIndex} className={`dot_carrousel_indicator ${selectedIndex === imageIndex ? ' active_dot' : ' '}`} onClick={() => goToImage(imageIndex)}></div>
+          {images.map((_, index) => (
+            <div key={index} className={`dot_carrousel_indicator ${selectedIndex === index ? ' active_dot' : ' '}`} onClick={() => goToImage(index)}></div>
           ))}
         </div>
       </div>

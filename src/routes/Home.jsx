@@ -4,6 +4,7 @@ import Menu from '../components/Menu'
 import banner from '../data/home/banner.json'
 import categoryServices from '../data/categoryServices.json'
 import Footer from '../components/Footer'
+import ProjectCard from '../components/ProjectCard'
 
 export default function Home() {
   return (
@@ -62,41 +63,15 @@ export default function Home() {
           <div className="body_home_projects">
             <h2>PROYECTOS</h2>
             <div className="section_card_projects">
-              <Link to={'/about'}>
-                <div className="card_project">
-                  <img src="/img/project1.jpg" loading="lazy" alt="project1" />
-                  <div className="project_description">
-                    <p>Coop. Agraria NorAndino</p>
-                    <p>Huancayo</p>
-                  </div>
-                </div>
-              </Link>
-              <Link to={'/about'}>
-                <div className="card_project">
-                  <img src="/img/project1.jpg" loading="lazy" alt="project1" />
-                  <div className="project_description">
-                    <p>Coop. Agraria NorAndino</p>
-                    <p>Huancayo</p>
-                  </div>
-                </div>
-              </Link>
-              <Link to={'/about'}>
-                <div className="card_project">
-                  <img src="/img/project1.jpg" loading="lazy" alt="project1" />
-                  <div className="project_description">
-                    <p>Coop. Agraria NorAndino</p>
-                    <p>Huancayo</p>
-                  </div>
-                </div>
-              </Link>
+              <ProjectCard />             
             </div>
 
             <div className="btn_projects">
-              <NavLink to={'/about'}>
+              <Link to={'/project'}>
                 <span className="custom_btn">
                   <p>CONOCER MÁS PROYECTOS</p>
                 </span>
-              </NavLink>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,4 @@
 export default function Banner({ image, height, title, description, btnBanner }) {
-  console.log(image)
   return (
     <>
       <div

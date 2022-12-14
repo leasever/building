@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "REMODELACIÓN DE PRIMER PISO DE EDIFICIO DE GOBIERNO",
+    "city": "Chilca",
+    "customer": "Local comunal de Chilca",
+    "year": "2019",
+    "description": "Descripción de la obra ejecutada en Chilca",
+    "imgPortada": "/img/SANA/SANA_0.jpg",
+    "images": ["/img/SANA/SANA_1.jpg", "/img/SANA/SANA_2.jpg", "/img/SANA/SANA_3.jpg", "/img/SANA/SANA_4.jpg", "/img/SANA/SANA_5.jpg", "/img/SANA/SANA_6.jpg"]
+  },
+  {
+    "id": "2",
+    "title": "CONSTRUCCIÓN DEL EDIFICIO DE LA UNIVERSIDAD 2",
+    "city": "Huancayo",
+    "customer": "Universidad de la vida UV",
+    "year": "2022",
+    "description": "Descripción de la obra ejecutada en Huancayo",
+    "imgPortada": "/img/SANA/SANA_0.jpg",
+    "images": ["/img/SANA/SANA_1.jpg", "/img/SANA/SANA_2.jpg", "/img/SANA/SANA_3.jpg", "/img/SANA/SANA_4.jpg", "/img/SANA/SANA_5.jpg", "/img/SANA/SANA_6.jpg"]
+  },
+  {
+    "id": "3",
+    "title": "REMODELACIÓN DE TERCER PISO DE EDIFICIO DE GOBIERNO 3",
+    "city": "Concepción",
+    "customer": "Municipalidad de Concepción",
+    "year": "2020",
+    "description": "Descripción de la obra ejecutada en Concepción",
+    "imgPortada": "/img/SANA/SANA_0.jpg",
+    "images": ["/img/SANA/SANA_1.jpg", "/img/SANA/SANA_2.jpg", "/img/SANA/SANA_3.jpg", "/img/SANA/SANA_4.jpg", "/img/SANA/SANA_5.jpg", "/img/SANA/SANA_6.jpg"]
+  }
+]
