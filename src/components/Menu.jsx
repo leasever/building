@@ -22,7 +22,7 @@ export default function Menu() {
         <div className="container">
           <div className="menu_section_pc">
             <div className="logo_img">
-              <img src="/img/logo.png" alt="Logo de la empresa" />
+              <img src="/img/logo.png" alt="Logo de la empresa" loading="eager" />
             </div>
             <nav>
               <ul>
@@ -41,7 +41,7 @@ export default function Menu() {
         </div>
         <div className="menu_section_movil">
           <div className="logo_img">
-            <img src="/img/logo_footer.png" alt="Logo de la empresa" />
+            <img src="/img/logo_footer.png" alt="Logo de la empresa" loading="eager" />
           </div>
           <div className="burger_menu" onClick={updateMenu}>
             <div className={burger_class}></div>
