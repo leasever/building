@@ -6,22 +6,28 @@ export default function Modal({ open, onClose, projectId }) {
   const { images, title, city, customer, year, description } = project
   return (
     <>
-      <div onClick={onClose} className="overlay_modal">
-        <div className="close_btn_modal">
-          <span className="close icon " onClick={onClose}></span>
+      <div
+        onClick={onClose}
+        className='overlay_modal'
+      >
+        <div className='close_btn_modal'>
+          <span
+            className='close icon '
+            onClick={onClose}
+          ></span>
         </div>
         <div
           onClick={(e) => {
             e.stopPropagation()
           }}
-          className="modal_container"
+          className='modal_container'
         >
-          <div className="carousel_img">
+          <div className='carousel_img'>
             <Carousel imageList={images} />
           </div>
 
-          <div className="modal_right">
-            <div className="content_modal">
+          <div className='modal_right'>
+            <div className='content_modal'>
               <p>{title}</p>
               <ul>
                 <li>

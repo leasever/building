@@ -34,17 +34,33 @@ export default function Carousel({ imageList }) {
   }
   return (
     <>
-      <div className="carousel_section">
-        <img src={selectedImage} alt="Proyecto" loading="lazy" className={loaded ? 'loaded' : ' '} onLoad={() => setLoaded(true)} />
-        <div onClick={previus} className="btn_carousel btn_previus">
-          <div className="arrow-left icon"></div>
+      <div className='carousel_section'>
+        <img
+          src={selectedImage}
+          alt='Proyecto'
+          loading='lazy'
+          className={loaded ? 'loaded' : ' '}
+          onLoad={() => setLoaded(true)}
+        />
+        <div
+          onClick={previus}
+          className='btn_carousel btn_previus'
+        >
+          <div className='arrow-left icon'></div>
         </div>
-        <div onClick={next} className="btn_carousel btn_next">
-          <div className="arrow-right icon"></div>
+        <div
+          onClick={next}
+          className='btn_carousel btn_next'
+        >
+          <div className='arrow-right icon'></div>
         </div>
-        <div className="dots_carousel">
+        <div className='dots_carousel'>
           {images.map((_, index) => (
-            <div key={index} className={`dot_carrousel_indicator ${selectedIndex === index ? ' active_dot' : ' '}`} onClick={() => goToImage(index)}></div>
+            <div
+              key={index}
+              className={`dot_carrousel_indicator ${selectedIndex === index ? ' active_dot' : ' '}`}
+              onClick={() => goToImage(index)}
+            ></div>
           ))}
         </div>
       </div>
