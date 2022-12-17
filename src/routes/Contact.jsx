@@ -22,7 +22,7 @@ export default function Contact() {
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value })
   }
-  console.log('values ', values)
+
   return (
     <>
       <Menu />
@@ -55,7 +55,7 @@ export default function Contact() {
               <p>
                 <strong>DIRECCIÓN:</strong>
                 <br />
-                Huancayo – Junin (Perú).
+                Huancayo - Junin (Perú).
               </p>
             </div>
 
