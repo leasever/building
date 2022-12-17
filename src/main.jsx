@@ -16,27 +16,27 @@ const router = createBrowserRouter([
     children: [
       {
         path: 'contacts/:contactid',
-        element: <Contact />
-      }
-    ]
+        element: <Contact />,
+      },
+    ],
   },
   {
     path: '/about',
-    element: <About />
+    element: <About />,
   },
   {
     path: '/project',
-    element: <Project />
+    element: <Project />,
   },
   ,
   {
     path: '/contact',
-    element: <Contact />
-  }
+    element: <Contact />,
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 )
