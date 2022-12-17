@@ -1,0 +1,9 @@
+{
+  "image": "banner_project_1.jpg",
+  "height": "65vh",
+  "title": "Contacto",
+  "description": "¿Qué servicio necesita? Queremos ayudarle.",
+  "btnBanner": {
+    "isActive": false
+  }
+}
