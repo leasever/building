@@ -52,12 +52,12 @@
   {
     "id": 6,
     "name": "message",
-    "type": "text",
     "placeholder": "Mensaje",
     "label": "Mensaje",
     "errorMessage": "Debe tener entre 3 y 1000 caracteres",
-    "pattern": "^[a-zA-ZÀ-ÿ0-9]{3,500}$",
-    "required": true,
-    "min": 3
+    "minLength": 3,
+    "maxLength": 1000,
+    "pattern": "[a-zA-ZÀ-ÿ0-9]{3,1000}$",
+    "required": true   
   }
 ]

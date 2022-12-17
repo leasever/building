@@ -2,9 +2,7 @@ import Banner from '../components/Banner'
 import banner from '../data/contact/banner.json'
 import Menu from '../components/Menu'
 import FormInput from '../components/FormInput'
-// import inputs from '../data/contact/inputs.json'
-import inputs from '../data/contact/inputs.js'
-
+import inputs from '../data/contact/inputs.json'
 import Footer from '../components/Footer'
 import { useState } from 'react'
 export default function Contact() {
@@ -63,18 +61,19 @@ export default function Contact() {
 
             <div className='contact_form'>
               <form onSubmit={handleSubmit}>
-                
                 {inputs.map((item) => (
-                  <div className={`input_group i_g_${item.id}`}>
+                  <div
+                    key={item.id}
+                    className={`input_group i_g_${item.id}`}
+                  >
                     <FormInput
-                      key={item.id}
                       {...item}
                       value={values[item.name]}
                       onChange={onChange}
                     />
                   </div>
                 ))}
-                
+
                 <div className='input_group'>
                   <button
                     className='custom_btn'
