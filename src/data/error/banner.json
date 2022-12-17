@@ -1,0 +1,9 @@
+{
+  "image": "banner_project_1.jpg",
+  "height": "100vh",
+  "title": "404",
+  "description": "Esta no es la página web que estás buscando.",
+  "btnBanner": {
+    "isActive": false
+  }
+}
