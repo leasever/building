@@ -33,7 +33,10 @@ export default function Menu() {
                   <NavLink to={'/about'}>EMPRESA</NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/project'}>NUESTRAS OBRAS </NavLink>
+                  <NavLink to={'/project'}>NUESTRAS OBRAS</NavLink>
+                </li>
+                <li>
+                  <NavLink to={'/contact'}>CONTACTO</NavLink>
                 </li>
               </ul>
             </nav>
@@ -60,6 +63,9 @@ export default function Menu() {
               </li>
               <li>
                 <NavLink to={'/project'}>NUESTRAS OBRAS</NavLink>
+              </li>
+              <li>
+                <NavLink to={'/contact'}>CONTACTO</NavLink>
               </li>
             </ul>
           </nav>
