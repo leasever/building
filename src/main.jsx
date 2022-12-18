@@ -8,6 +8,7 @@ import Error from './routes/Error'
 import Project from './routes/Project'
 import Contact from './routes/Contact'
 
+
 const router = createBrowserRouter([
   {
     path: '/',

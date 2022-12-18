@@ -46,7 +46,7 @@
     "placeholder": "Asunto",
     "label": "Asunto",
     "errorMessage": "Debe tener entre 3 y 50 caracteres",
-    "pattern": "[a-zA-ZÀ-ÿ0-9]{3,50}$",
+    "pattern": "{3,50}$",
     "required": true
   },
   {

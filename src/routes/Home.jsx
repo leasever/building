@@ -5,13 +5,16 @@ import banner from '../data/home/banner.json'
 import categoryServices from '../data/categoryServices.json'
 import Footer from '../components/Footer'
 import ProjectCard from '../components/ProjectCard'
+import ButtonWhatsaap from '../components/ButtonWhatsapp'
 
 export default function Home() {
   return (
     <>
       <Menu />
+
       <div className='home_container'>
         <Banner {...banner} />
+        <ButtonWhatsaap />
         <div className='container'>
           <div
             className='body_home'
@@ -96,8 +99,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
+
+      <Footer />
     </>
   )
 }

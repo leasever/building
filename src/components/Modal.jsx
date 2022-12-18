@@ -12,7 +12,7 @@ export default function Modal({ open, onClose, projectId }) {
       >
         <div className='close_btn_modal'>
           <span
-            className='close icon '
+            className='close icon'
             onClick={onClose}
           ></span>
         </div>

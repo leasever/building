@@ -2,6 +2,8 @@ import Banner from '../components/Banner'
 import banner from '../data/about/banner.json'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+import ButtonWhatsaap from '../components/ButtonWhatsapp'
+
 
 export default function About() {
   return (
@@ -9,6 +11,7 @@ export default function About() {
       <Menu />
       <div className='about_container'>
         <Banner {...banner} />
+        <ButtonWhatsaap />
         <div className='container'>
           <div className='about_us'>
             <div className='about_description'>

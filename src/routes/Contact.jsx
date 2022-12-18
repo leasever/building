@@ -5,6 +5,8 @@ import FormInput from '../components/FormInput'
 import inputs from '../data/contact/inputs.json'
 import Footer from '../components/Footer'
 import { useState } from 'react'
+import ButtonWhatsaap from '../components/ButtonWhatsapp'
+
 export default function Contact() {
   const [values, setValues] = useState({
     firstName: '',
@@ -28,6 +30,7 @@ export default function Contact() {
       <Menu />
       <div className='contact_container'>
         <Banner {...banner} />
+        <ButtonWhatsaap />
         <div className='container'>
           <div className='contact_options'>
             <div className='option_img active'>
@@ -75,14 +78,7 @@ export default function Contact() {
                 ))}
 
                 <div className='input_group'>
-                  <button
-                    className='custom_btn'
-                    type='submit'
-                    value='ENVIAR'
-                    id='btnSubmit'
-                  >
-                    ENVIAR
-                  </button>
+                  <button className='custom_btn'>ENVIAR</button>
                 </div>
               </form>
             </div>

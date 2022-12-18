@@ -3,6 +3,7 @@ import banner from '../data/project/banner.json'
 import Menu from '../components/Menu'
 import ProjectCard from '../components/ProjectCard'
 import Footer from '../components/Footer'
+import ButtonWhatsaap from '../components/ButtonWhatsapp'
 
 export default function Project() {
   return (
@@ -10,6 +11,7 @@ export default function Project() {
       <Menu />
       <div className='project_section'>
         <Banner {...banner} />
+        <ButtonWhatsaap />
         <div className='template_project'>
           <div className='container'>
             <p>Constructora Hermanos cuenta con una reconocida experiencia en Huancayo y toda la región centro del Perú, que queda avalada por cualquiera de nuestros proyectos finalizados.</p>
