@@ -540,6 +540,8 @@ header {
 
 // contact
 .contact_container {
+  user-select: none;
+
   .banner_section {
     .banner_description {
       .container {
@@ -555,47 +557,36 @@ header {
     }
   }
 
-  .container {
-    .contact_options {
+  .contact_options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+
+    .option_img {
       display: flex;
-      justify-content: center;
-      min-height: 220px;
-      width: 100%;
-      padding: 20px 0;
+      flex-direction: column;
+      align-items: center;
+      width: 140px;
+      height: 170px;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-align: center;
+      scroll-snap-align: start;
 
-      .option_img {
-        width: 140px;
-        height: 180px;
-        padding: 10px 20px 20px;
-        text-align: center;
-
-        img {
-          width: 90px;
-          height: 90px;
-          border-radius: 50%;
-          opacity: 0.85;
-          filter: grayscale(1);
-        }
-
-        P {
-          line-height: 15px;
-          font-size: 13px;
-        }
-
+      .img_contact {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
         &:hover {
-          cursor: pointer;
-
-          img {
-            opacity: 1;
-          }
+          opacity: 0.85;
         }
+      }
 
-        &.active {
-          img {
-            opacity: 1;
-            filter: none;
-          }
-        }
+      P {
+        line-height: 15px;
+        font-size: 13px;
       }
     }
   }
@@ -612,6 +603,7 @@ header {
       .contact_info {
         text-align: end;
         width: 50%;
+        min-height: 210px;
         padding: 10px;
       }
 
@@ -621,6 +613,7 @@ header {
 
         form {
           width: 100%;
+          min-height: 487px;
           display: flex;
           justify-content: center;
           flex-wrap: wrap;
@@ -650,7 +643,7 @@ header {
                 box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
               }
 
-              &:invalid[focused='true']~p {
+              &:invalid[focused='true'] ~ p {
                 display: block;
               }
 
@@ -683,6 +676,21 @@ header {
               margin: 10px auto;
               width: 200px;
             }
+
+            .section_spinner {
+              margin-top: 20px;
+
+              .spinner {
+                height: 0;
+                width: 0;
+                padding: 15px;
+                border: 6px solid #ccc;
+                border-right-color: #888;
+                border-radius: 22px;
+                animation: spin 1s infinite linear;
+                margin: auto;
+              }
+            }
           }
 
           .i_g_5,
@@ -690,8 +698,30 @@ header {
             width: 100%;
           }
         }
+
+        .send_email_true {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 210px;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+
+          .success_send {
+            width: 75px;
+            height: 75px;
+            background-size: cover;
+          }
+        }
       }
     }
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
   }
 }
 
@@ -996,11 +1026,11 @@ header {
   display: block;
   transform: scale(var(--ggs, 2));
   width: 22px;
-  height: 22px
+  height: 22px;
 }
 
 .gg_play_button::before {
-  content: "";
+  content: '';
   display: block;
   box-sizing: border-box;
   position: absolute;
@@ -1010,7 +1040,7 @@ header {
   border-bottom: 5px solid transparent;
   border-left: 9px solid;
   top: 6px;
-  left: 9px
+  left: 9px;
 }
 
 footer {
@@ -1226,6 +1256,32 @@ footer {
   .section_footer {
     flex-direction: column;
   }
+
+  .contact_container {
+    .contact_options {
+      justify-content: flex-start;
+      padding-left: 3%;
+      overflow-x: auto;
+      scroll-snap-type: x;
+      position: relative;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      cursor: grab;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .co_ow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-width: 560px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
 }
 
 //whatsaap modal
@@ -1280,8 +1336,6 @@ footer {
   display: inline-block;
   margin-right: 3px;
   cursor: pointer;
-
-
 }
 
 .wcs_button_circle,
@@ -1293,7 +1347,8 @@ footer {
 }
 
 @keyframes slidein {
-  from {}
+  from {
+  }
 
   to {
     -webkit-transform: translate(0, -5px);
@@ -1489,14 +1544,11 @@ footer {
   right: 35px;
   cursor: pointer;
 
-
   .close.icon {
     color: $color-primary;
-
   }
 
   opacity: 0.8;
-
 
   -webkit-transition: all 0.08s ease-in-out;
   -moz-transition: all 0.08s ease-in-out;
@@ -1506,8 +1558,6 @@ footer {
     opacity: 1;
   }
 }
-
-
 
 /* ====================================================================== *
             [1] HEADER
@@ -1704,7 +1754,7 @@ footer {
     border-style: none;
     cursor: pointer;
     background-color: $color-primary;
-    }
+  }
 }
 
 /* AVATAR */
@@ -1739,7 +1789,7 @@ footer {
   color: #f1a528;
 }
 
-.wcs_popup_input_offline+.wcs_popup_avatar {
+.wcs_popup_input_offline + .wcs_popup_avatar {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
@@ -1846,7 +1896,7 @@ footer {
   opacity: 0;
 }
 
-.wcs-show.wcs-effect-4~.datepicker-in-fullscreen-background,
+.wcs-show.wcs-effect-4 ~ .datepicker-in-fullscreen-background,
 .wcs-effect-4 .wcs_popup {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
