@@ -14,7 +14,7 @@ export default function Footer() {
             <p>CONSTRUCTORA HERMANOS S.A.C</p>
             <p>Huancayo - Perú</p>
             <p>Teléfono: 966 908 047</p>
-            <p>Email: leandrovegaabraham@mail.com</p>
+            <p>Email: leandrovegaabraham@gmail.com</p>
           </div>
         </div>
         <div className='section_bottom_footer'>

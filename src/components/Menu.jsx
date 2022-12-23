@@ -34,7 +34,9 @@ export default function Menu() {
             </li>
             <li>
               <a
-                href='#'
+                href='https://www.facebook.com'
+                target='_blank'
+                rel='noopener noreferrer'
                 title='Facebook'
               >
                 <div id='idFacebookIcon'>f</div>
