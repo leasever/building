@@ -6,6 +6,7 @@ import ButtonWhatsaap from '../components/ButtonWhatsapp'
 
 
 export default function About() {
+  window.scrollTo(0, 0)
   return (
     <>
       <Menu />

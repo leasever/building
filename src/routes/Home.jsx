@@ -8,6 +8,7 @@ import ProjectCard from '../components/ProjectCard'
 import ButtonWhatsaap from '../components/ButtonWhatsapp'
 
 export default function Home() {
+  window.scrollTo(0, 0)
   return (
     <>
       <Menu />

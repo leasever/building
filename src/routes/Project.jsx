@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import ButtonWhatsaap from '../components/ButtonWhatsapp'
 
 export default function Project() {
+  window.scrollTo(0, 0)
   return (
     <>
       <Menu />
