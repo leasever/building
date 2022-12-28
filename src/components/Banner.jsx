@@ -4,20 +4,10 @@ export default function Banner({ image, height, title, description, btnBanner })
       <div
         className='banner_section'
         style={{
-          minHeight: `${height}`,
+          height: `${height}`,
+          backgroundImage: `url(img/${image})`
         }}
       >
-        <div className='banner'>
-          <img
-            src={`img/${image}`}
-            alt={title}
-            loading='lazy'
-            style={{
-              minHeight: `${height}`,
-              maxHeight: `${height}`,
-            }}
-          />
-        </div>
         <div className='overlay'></div>
         <div className='banner_description'>
           <div className='container'>

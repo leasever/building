@@ -4,6 +4,7 @@ import Menu from '../components/Menu'
 import ProjectCard from '../components/ProjectCard'
 import Footer from '../components/Footer'
 import ButtonWhatsaap from '../components/ButtonWhatsapp'
+import ButtonUp from '../components/ButtonUp'
 
 export default function Project() {
   window.scrollTo(0, 0)
@@ -23,6 +24,8 @@ export default function Project() {
             <ProjectCard />
           </div>
         </div>
+        <ButtonUp />
+
       </div>
       <Footer />
     </>

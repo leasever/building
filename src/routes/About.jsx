@@ -3,7 +3,7 @@ import banner from '../data/about/banner.json'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
 import ButtonWhatsaap from '../components/ButtonWhatsapp'
-
+import ButtonUp from '../components/ButtonUp'
 
 export default function About() {
   window.scrollTo(0, 0)
@@ -65,6 +65,8 @@ export default function About() {
             <div className='banner_2_contain'></div>
           </div>
         </div>
+        <ButtonUp />
+
       </div>
       <Footer />
     </>

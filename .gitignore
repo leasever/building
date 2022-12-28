@@ -1,3 +1,5 @@
+.env
+
 # Logs
 logs
 *.log
@@ -24,3 +26,4 @@ dist-ssr
 *.sw?
 vite.config.js.timestamp-1670806169884.mjs
 .vercel
+

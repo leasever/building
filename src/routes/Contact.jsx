@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import { useState } from 'react'
 import ButtonWhatsaap from '../components/ButtonWhatsapp'
 import { postEmail } from '../services/public.service'
+import ButtonUp from '../components/ButtonUp'
 
 export default function Contact() {
   const [loading, setLoading] = useState(false)
@@ -167,6 +168,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
+        <ButtonUp />
+
       </div>
       <Footer />
     </div>

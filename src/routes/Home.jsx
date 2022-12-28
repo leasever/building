@@ -6,6 +6,7 @@ import categoryServices from '../data/categoryServices.json'
 import Footer from '../components/Footer'
 import ProjectCard from '../components/ProjectCard'
 import ButtonWhatsaap from '../components/ButtonWhatsapp'
+import ButtonUp from '../components/ButtonUp'
 
 export default function Home() {
   window.scrollTo(0, 0)
@@ -99,6 +100,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          <ButtonUp />
         </div>
       </div>
 
