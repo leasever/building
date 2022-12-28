@@ -5,7 +5,7 @@ import FormInput from '../components/FormInput'
 import inputs from '../data/contact/inputs.json'
 import Footer from '../components/Footer'
 import { useState } from 'react'
-import ButtonWhatsaap from '../components/ButtonWhatsapp'
+import ButtonWhatsapp from '../components/ButtonWhatsapp'
 import { postEmail } from '../services/public.service'
 import ButtonUp from '../components/ButtonUp'
 
@@ -66,7 +66,7 @@ export default function Contact() {
       <Menu />
       <div className='contact_container'>
         <Banner {...banner} />
-        <ButtonWhatsaap />
+        <ButtonWhatsapp />
 
         <div className='contact_options'>
           <div

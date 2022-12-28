@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function ButtonWhatsaap() {
+export default function ButtonWhatsapp() {
   const [isClicked, setIsClicked] = useState(false)
   const [message, setMessage] = useState('')
   const btnWhatshap = () => {

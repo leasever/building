@@ -5,7 +5,7 @@ import banner from '../data/home/banner.json'
 import categoryServices from '../data/categoryServices.json'
 import Footer from '../components/Footer'
 import ProjectCard from '../components/ProjectCard'
-import ButtonWhatsaap from '../components/ButtonWhatsapp'
+import ButtonWhatsapp from '../components/ButtonWhatsapp'
 import ButtonUp from '../components/ButtonUp'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
 
       <div className='home_container'>
         <Banner {...banner} />
-        <ButtonWhatsaap />
+        <ButtonWhatsapp />
         <div className='container'>
           <div
             className='body_home'
