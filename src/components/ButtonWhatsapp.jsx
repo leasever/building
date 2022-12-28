@@ -14,7 +14,7 @@ export default function ButtonWhatsaap() {
       if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         WhatsAppUrl = 'https://api.whatsapp.com/send'
       }
-      let url = WhatsAppUrl + '?phone=' + +51966908047 + '&text=' + message
+      let url = WhatsAppUrl + '?phone=' + `${import.meta.env.VITE_NUMBER_PHONE}` + '&text=' + message
       let win = window.open(url, '_blank')
       win.focus()
     }

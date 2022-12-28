@@ -230,10 +230,16 @@ header {
 
   .banner {
     position: absolute;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
+    object-fit: cover;
+
+
+    img {
+      width: 1440px;
+      height: 900px;
+      height: 100%;
+      width: 100%;
+    }
   }
 
   .overlay {
@@ -316,10 +322,10 @@ header {
           max-width: 768px;
 
           img {
-            object-fit: cover;
+            width: 768px;
+            height: 352px;
             width: 100%;
-            max-width: 768px;
-            min-height: 352px;
+            object-fit: cover;
           }
         }
 
@@ -514,6 +520,16 @@ header {
     .overlay {
       background: rgba($color-text, 0.5);
     }
+
+    .banner_description {
+      .container {
+        justify-content: end;
+
+        .title_description {
+          min-height: 250px;
+        }
+      }
+    }
   }
 
   .template_project {
@@ -644,7 +660,7 @@ header {
                 box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.75);
               }
 
-              &:invalid[focused='true'] ~ p {
+              &:invalid[focused='true']~p {
                 display: block;
               }
 
@@ -1320,8 +1336,7 @@ footer {
 }
 
 @keyframes slidein {
-  from {
-  }
+  from {}
 
   to {
     -webkit-transform: translate(0, -5px);
@@ -1480,7 +1495,7 @@ footer {
   color: #f1a528;
 }
 
-.wcs_popup_input_offline + .wcs_popup_avatar {
+.wcs_popup_input_offline+.wcs_popup_avatar {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
